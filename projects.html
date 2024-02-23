@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      header {
+          height: 100px;
+          padding-top: 10px;
+      }
+
+      nav {
+          display: flex;
+          justify-content: space-around;
+          border-radius: 15px;
+          align-items: center;
+          height: 80px;
+          background-color: #8a2be2;
+      }
+
+      nav ul {
+          display: flex;
+          justify-content: center;
+          font-weight: bold;
+      }
+
+      nav ul li {
+          list-style: none;
+          margin: 0 23px;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: white;
+      }
+
+      nav ul li a:hover {
+          font-size: 1.1rem;
+          color: red;
+      }
+
+      .left {
+          font-size: 2.0rem;
+          font-weight: bold;
+          color: white;
+      }
+
+
+      .project {
+          position: relative;
+          width: 100%;
+          height: 300px;
+          background-size: cover;
+          background-position: center;
+          margin-bottom: 20px;
+      }
+
+      .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: white;
+      }
+
+      .content h2 {
+          margin: 0;
+          font-size: 24px;
+      }
+
+      .content p {
+          margin: 0;
+          font-size: 18px;
+      }
+
+      .content .description {
+          margin-top: 20px;
+          font-size: 16px;
+      }
+
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      header {
+          background-color: white;
+          padding: 10px 0;
+      }
+
+      nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      nav ul li {
+          display: inline;
+          margin-right: 20px;
+      }
+
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+      }
+
+      .project {
+          position: relative;
+          width: 100%;
+          height: 300px;
+          background-size: cover;
+          background-position: center;
+          margin-bottom: 20px;
+      }
+
+      #nodejs {
+          background-image: url('nodejs.jpg');
+      }
+
+      #frontend {
+          background-image: url('frontend.webp');
+      }
+
+      #digital-marketer {
+          background-image: url('digital-marketer.jpg');
+      }
+
+      .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      #element {
+          color: rgb(199, 13, 168);
+      }
+
+      #element1 {
+          color: rgb(199, 13, 199);
+      }
+
+      #element2 {
+          color: rgb(199, 13, 199);
+      }
+
+      .content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: yellow;
+      }
+
+      .content h2 {
+          margin: 0;
+          font-size: 24px;
+      }
+
+      .content p {
+          margin: 0;
+          font-size: 18px;
+      }
+
+      .content .description {
+          margin-top: 20px;
+          font-size: 16px;
+      }
+      footer {
+          background-color: #8a2be2;
+          color: white;
+          text-align: center;
+          padding: 20px 0;
+          height: 80px;
+      }
+
+      ul li a {
+          color: white;
+          /* Set text color to white */
+          text-decoration: none;
+      }
+
+
+      footer {
+          background-color: #8a2be2;
+          color: white;
+          height: 80px;
+      }
+      .footer {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+      .footer div {
+          flex: 1 1 25%;
+          max-width: 300px;
+          margin: 20px;
+      }
+      .footer h3 {
+          margin-bottom: 20px;
+      }
+      .footer ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
+      }
+      .footer li {
+          margin-bottom: 1px;
+          margin-right: 20px;
+      }
+      .image-bottom {
+            border-radius: 9px;
+            height: 20px;
+            width: 20px;
+            justify-items: center;
+        }
+        .menu a {
+            color: purple;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sahil's Portfolio</div>
+        <div class="rightsection">
+          <ul>
+            <li><a href="INDEX1.HTML">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="project" id="nodejs">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Node.js Project</h2>
+        <p>(2023-Present), Youtube</p>
+
+        <span id="element"></span>
+        <p class="description" data-project="nodejs"></p>
+      </div>
+    </div>
+
+    <div class="project" id="frontend">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>
+          Personal portfolio website using HTML, CSS and JavaScript with 6 month
+          internship experience
+        </h2>
+        <p>(2023-Present), Arrowhead Digitals</p>
+        <span id="element1"></span>
+        <p class="description" data-project="frontend"></p>
+      </div>
+    </div>
+
+    <div class="project" id="frontend">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>SEO specialist with 1 year experience of international Projects</h2>
+        <p>(2023-Present), Ebuilderz infotech</p>
+        <span id="element1"></span>
+        <p class="description" data-project="frontend"></p>
+      </div>
+    </div>
+
+    <div class="project" id="digital-marketer">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Digital Marketing website using Wordpress</h2>
+        <p>(2021-Present), Gndec Ldh</p>
+        <span id="element2"></span>
+        <p class="description" data-project="digital-marketer"></p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div>
+          <h3>&copy; Sahil's Portfolio</h3>
+          <div class="logo">
+            <a
+              href="https://www.linkedin.com/in/sahil-thakur-1a45b4208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >
+              <img class="image-bottom" src="linkedin.jpg" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://www.instagram.com/gndec_?igsh=MWY0OG5kczRoNHZ0cg=="
+            >
+              <img class="image-bottom" src="insta.jpg" alt="" />
+            </a>
+
+            <a href="https://www.youtube.com/@successlife_tips">
+              <img class="image-bottom" src="yt.jpg" alt="" />
+            </a>
+          </div>
+          <ul class="menu">
+            <li><a href="INDEX1.HTML">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

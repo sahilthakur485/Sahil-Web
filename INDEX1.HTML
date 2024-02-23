@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil's personal portfolio</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: whitesmoke;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      header {
+        height: 100px;
+        padding-top: 10px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 15px;
+        align-items: center;
+        height: 90px;
+        background-color: #8a2be2;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        font-size: 1.1rem;
+        color: red;
+      }
+
+      .left {
+        font-size: 2.0rem;
+        font-weight: bold;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+      }
+
+      .firstsection>div {
+        width: 40%;
+      }
+
+      .leftsection {
+        font-size: 2.4rem;
+        margin: 20px 0;
+        color: #8a2be2;
+        font-weight: bold;
+      }
+
+      .leftsection .button {
+        padding: 50px 0;
+      }
+
+      .leftsection .btn {
+        padding: 10px 22px;
+        background: #8a2be2;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+
+      .button .btn a {
+        text-decoration: none;
+        /* Remove underline from links */
+        color: inherit;
+        /* Inherit the color from the button */
+        font-weight: normal;
+      }
+
+      .leftsection {
+        width: 50%;
+        padding: -0%;
+      }
+
+      .leftsection h1 {
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+      }
+
+      .leftsection p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .rightsection img {
+        border-radius: 200px;
+        float: right;
+        width: 105%;
+        margin: -10px 0;
+      }
+
+      .purple {
+        color: rgb(5, 148, 40);
+      }
+
+      #element {
+        color: rgb(233, 3, 15);
+      }
+
+      .secondsection {
+        padding: 50px 20px;
+      }
+
+      .image-top {
+        border-radius: 9px;
+        height: 20px;
+        width: 20px;
+      }
+
+      .box {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+
+      .box::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        height: 100%;
+        background: white;
+      }
+
+      .box:last-child::after {
+        display: none;
+      }
+
+      .position {
+        color: rgb(219, 155, 17);
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .company {
+        color: #ff4500;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+      }
+
+      .vertical-desc {
+        font-size: 1rem;
+        color: #ccc;
+        line-height: 1.6;
+      }
+
+      footer {
+        background-color: #8a2be2;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        height: 80px;
+      }
+
+      ul li a {
+        color: white;
+        /* Set text color to white */
+        text-decoration: none;
+
+
+      }
+      footer {
+            background-color: #8a2be2;
+            color: white;
+            height: 80px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .footer h3 {
+            margin-top: 3px;
+        }
+        .footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+        .footer li {
+            margin-bottom: 1px;
+            margin-right: 20px;
+        }
+
+        .menu a {
+              color: purple;
+          }
+
+      .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      
+
+      .footer div {
+        max-width: 325px;
+        padding-bottom: 5px;
+        margin: 15px;
+      }
+
+      .footer h3 {
+        margin-bottom: 20px;
+      }
+
+      .footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+      }
+
+      /* Select the <a> tags within the .menu <ul> and change their color to blue */
+      .menu a {
+        color: purple;
+      }
+
+
+      .footer li {
+        margin-bottom: 1px;
+        margin-right: 20px;
+      }
+
+
+
+      .image-bottom {
+        border-radius: 9px;
+        height: 20px;
+        width: 20px;
+        justify-items: center;
+      }
+
+
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+          padding: 20px 0;
+        }
+
+        .leftsection,
+        .rightsection {
+          width: 100%;
+          padding: 0 20px;
+          text-align: center;
+        }
+
+        .box::after {
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 2px;
+          width: 100%;
+        }
+
+        .box:last-child::after {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sahil's Portfolio</div>
+        <div class="rightsection">
+          <ul>
+            <li><a href="INDEX1.HTML">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Sahil Thakur</span>
+
+          <div>I'm a experienced</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn">
+              <a
+                href="Sahil's Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download CV
+              </a>
+            </button>
+            <button class="btn">
+              <a
+                href="https://www.linkedin.com/in/sahil-thakur-1a45b4208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit LinkedIn</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div>
+          <h3>&copy; Sahil's Portfolio</h3>
+          <div class="logo">
+            <a
+              href="https://www.linkedin.com/in/sahil-thakur-1a45b4208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >
+              <img class="image-bottom" src="linkedin.jpg" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://www.instagram.com/gndec_?igsh=MWY0OG5kczRoNHZ0cg=="
+            >
+              <img class="image-bottom" src="insta.jpg" alt="" />
+            </a>
+
+            <a href="https://www.youtube.com/@successlife_tips">
+              <img class="image-bottom" src="yt.jpg" alt="" />
+            </a>
+          </div>
+          <ul class="menu">
+            <li><a href="INDEX1.HTML">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web developer",
+          "Graphic Designer",
+          "Web designer",
+          "Digital marketer",
+          "Web Developer",
+        ],
+        typeSpeed: 80,
+      });
+    </script>
+  </body>
+</html>

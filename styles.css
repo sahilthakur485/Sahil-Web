@@ -1,0 +1,197 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    align-items: center;
+    height: 80px;
+    background-color: #8a2be2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-size: 1.1rem;
+    color: red;
+}
+
+.left {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+/*.about-image {
+    flex: 1;
+}
+
+/*.about-image img {
+    max-width: 100%;
+    height: auto;
+    width: 41%;
+    border-radius: 200px;
+    float: right;
+}*/
+.about-image {
+    perspective: 800px;
+    /* Set perspective depth */
+}
+
+.about-image img {
+    width: 100%;
+    /* Ensure image fills its container */
+    max-width: 300px;
+    /* Adjust maximum width as needed */
+    transform: rotateY(345deg) rotateX(0deg);
+    /* Apply rotation for 3D effect */
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
+    /* Add black shadow */
+}
+
+body {
+    background-color: whitesmoke;
+    /* Set light pink background */
+}
+
+
+.about-section {
+    background-color: rgb(240, 215, 218);
+    padding: 60px 0;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #8a2be2;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 80px;
+}
+
+ul li a {
+    color: white;
+    /* Set text color to white */
+    text-decoration: none;
+
+
+}
+
+
+footer {
+    background-color: #8a2be2;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 70px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+}
+
+.footer div {
+    flex: 1 1 25%;
+    max-width: 300px;
+    margin: 13px;
+}
+
+.footer h3 {
+    margin-top: -9px;
+
+}
+
+footer.logo {
+    height: 90px;
+    margin-top: -9px;
+    
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 0;
+}
+
+.menu li {
+    margin-bottom: 1px;
+    margin-right: 20px;
+}
+
+.image-bottom {
+    border-radius: 9px;
+    height: 20px;
+    width: 20px;
+    justify-items: center;
+}
+
+.menu a {
+    color: purple;
+}
